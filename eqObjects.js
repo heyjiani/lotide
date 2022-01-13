@@ -7,6 +7,7 @@ const assertEqual = function(actual, expected) {
   }
 };
 
+//HELPER FUNCTION
 const eqArrays = (arrayA, arrayB) => {
   if (arrayA.length !== arrayB.length) {
     return false;

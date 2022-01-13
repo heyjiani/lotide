@@ -1,3 +1,4 @@
+//HELPER FUNCTION
 const eqArrays = (arrayA, arrayB) => {
   if (arrayA.length !== arrayB.length) {
     return false;
@@ -10,6 +11,7 @@ const eqArrays = (arrayA, arrayB) => {
   return true;
 };
 
+//ACTUAL FUNCTION
 const assertArraysEqual = (arrayA, arrayB) => {
   if (eqArrays(arrayA, arrayB)) {
     console.log(`✅✅✅ Assertion Passed: [${arrayA}] === [${arrayB}]`);
@@ -18,6 +20,7 @@ const assertArraysEqual = (arrayA, arrayB) => {
   }
 };
 
-assertArraysEqual([1, 2, 3],[1, 2, 3]);
-assertArraysEqual([1, 3, 2],[1, 2, 3]);
-assertArraysEqual([1, 2, 3],[1, 2]);
+//TEST CASES
+assertArraysEqual([1, 2, 3],[1, 2, 3]); //TRUE
+assertArraysEqual([1, 3, 2],[1, 2, 3]); //FALSE
+assertArraysEqual([1, 2, 3],[1, 2]); //FALSE

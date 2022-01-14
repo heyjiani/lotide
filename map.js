@@ -1,12 +1,9 @@
 //HELPER FUNCTIONS
 const eqArrays = (arrayA, arrayB) => {
-  if (arrayA.length !== arrayB.length) {
-    return false;
-  }
+  if (arrayA.length !== arrayB.length) return false;
+  
   for (let i = 0; i < arrayA.length; i++) {
-    if (arrayA[i] !== arrayB[i]) {
-      return false;
-    }
+    if (arrayA[i] !== arrayB[i]) return false;
   }
   return true;
 };
@@ -31,4 +28,3 @@ const map = function(array, callback) {
 const words = ["ground", "control", "to", "major", "tom"];
 const results1 = map(words, word => word[0]);
 assertArraysEqual(results1, ['g', 'c', 't', 'm', 't']);
-

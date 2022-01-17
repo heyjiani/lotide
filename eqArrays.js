@@ -18,11 +18,3 @@ const eqArrays = (arrayA, arrayB) => {
 
 module.exports = eqArrays;
 
-//TEST CASES
-// console.log(assertEqual(eqArrays([2,1,3],[1,2,3]), false));
-// console.log(assertEqual(eqArrays([1,2,3],[1,2,3]), true));
-// console.log(assertEqual(eqArrays([2,1],[1,2,3]), false));
-
-// console.log(assertEqual(eqArrays([[2, 3], [4]], [[2, 3], [4]]), true));
-// console.log(assertEqual(eqArrays([[2, 3], [4]], [[2, 3], [4, 5]]), false));
-// console.log(assertEqual(eqArrays([[2, 3], [4]], [[2, 3], 4]), false));

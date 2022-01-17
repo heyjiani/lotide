@@ -6,10 +6,3 @@ const tail = function (array) {
 };
 
 module.exports = tail;
-
-//test cases:
-// console.log(tail([]));
-// console.log(tail([3]));
-// const arr = [2, 55, "hello"];
-// console.log(tail(arr));
-// assertEqual(arr.length, 3);

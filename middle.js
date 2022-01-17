@@ -1,6 +1,3 @@
-//TEST/ASSERTION FUNCTIONS
-const assertArraysEqual = require('./assertArraysEqual');
-
 //ACTUAL FUNCTION : FIND MIDDLE ELEMENTS OF ARRAY
 const middle = array => {
   const length = array.length;

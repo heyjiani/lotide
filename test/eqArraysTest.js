@@ -1,5 +1,9 @@
 const eqArrays = require('../eqArrays');
-const assertEqual = require('../assertEqual');
+const assert = require('chai').assert;
+
+
+
+
 
 // //TEST CASES
 // console.log(assertEqual(eqArrays([2,1,3],[1,2,3]), false));

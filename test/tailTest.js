@@ -1,0 +1,2 @@
+const tail = require('../tail');
+

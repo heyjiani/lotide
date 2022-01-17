@@ -1,6 +1,3 @@
-//HELPER FUNCTION
-const assertEqual = require('./assertEqual');
-
 //FUNCTION FOR COMPARING ARRAYS FOR PERFECT MATCH
 const eqArrays = (arrayA, arrayB) => {
   let result = true;
@@ -17,4 +14,3 @@ const eqArrays = (arrayA, arrayB) => {
 };
 
 module.exports = eqArrays;
-

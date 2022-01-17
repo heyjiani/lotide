@@ -1,22 +1,15 @@
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
-  }
+const assertEqual = require('./assertEqual');
+
+//FUNCTION FOR RETURNING TAIL ELEMENTS IN AN ARRAY
+const tail = function (array) {
+  return array.slice(1, array.length);
 };
 
-const tail = array => {
-  let output = [];
-  for (let i = 1; i < array.length; i++) {
-    output.push(array[i]);
-  }
-  return output;
-};
+module.exports = tail;
 
 //test cases:
-console.log(tail([]));
-console.log(tail([3]));
-const arr = [2, 55, "hello"];
-console.log(tail(arr));
-assertEqual(arr.length, 3);
+// console.log(tail([]));
+// console.log(tail([3]));
+// const arr = [2, 55, "hello"];
+// console.log(tail(arr));
+// assertEqual(arr.length, 3);

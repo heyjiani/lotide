@@ -9,7 +9,7 @@ const assertEqual = function(actual, expected) {
 
 //ACTUAL FUNCTION: RETURN KEY WHICH CONTAINS A CERTAIN VALUE
 const findKeyByValue = (obj, value) => {
-  for (key in obj) {
+  for (const key in obj) {
     if (obj[key] === value) return key;
   }
 };

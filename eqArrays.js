@@ -1,9 +1,5 @@
 //HELPER FUNCTION
-const assertEqual = function(actual, expected) {
-  actual === expected
-  ? console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`)
-  : console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
-};
+const assertEqual = require('./assertEqual');
 
 //FUNCTION FOR COMPARING ARRAYS FOR PERFECT MATCH
 const eqArrays = (arrayA, arrayB) => {
@@ -20,11 +16,13 @@ const eqArrays = (arrayA, arrayB) => {
   return result;
 };
 
-//TEST CASES
-console.log(assertEqual(eqArrays([2,1,3],[1,2,3]), false));
-console.log(assertEqual(eqArrays([1,2,3],[1,2,3]), true));
-console.log(assertEqual(eqArrays([2,1],[1,2,3]), false));
+module.exports = eqArrays;
 
-console.log(assertEqual(eqArrays([[2, 3], [4]], [[2, 3], [4]]), true));
-console.log(assertEqual(eqArrays([[2, 3], [4]], [[2, 3], [4, 5]]), false));
-console.log(assertEqual(eqArrays([[2, 3], [4]], [[2, 3], 4]), false));
+//TEST CASES
+// console.log(assertEqual(eqArrays([2,1,3],[1,2,3]), false));
+// console.log(assertEqual(eqArrays([1,2,3],[1,2,3]), true));
+// console.log(assertEqual(eqArrays([2,1],[1,2,3]), false));
+
+// console.log(assertEqual(eqArrays([[2, 3], [4]], [[2, 3], [4]]), true));
+// console.log(assertEqual(eqArrays([[2, 3], [4]], [[2, 3], [4, 5]]), false));
+// console.log(assertEqual(eqArrays([[2, 3], [4]], [[2, 3], 4]), false));

@@ -3,7 +3,7 @@ const countLetters = str => {
   const result = {};
   const strNoSpace = str.split(' ').join('');
 
-  for (letter of strNoSpace) {
+  for (const letter of strNoSpace) {
     result[letter] = result[letter] + 1 || 1;
   }
   return result;

@@ -1,3 +1,5 @@
+const eqArrays = require('./eqArrays');
+
 //ACTUAL FUNCTION: TAKE TWO OBJECTS AND RETURN TRUE/FALSE BASED ON PERFECT MATCH
 const eqObjects = function(object1, object2) {
 
@@ -7,9 +9,9 @@ const eqObjects = function(object1, object2) {
 
     if (typeof object1[key] === 'object') {
       return !Array.isArray(object1[key])
-      ? eqObjects(object1[key], object2[key])
-      : eqArrays(object1[key], object2[key]);
-    } 
+        ? eqObjects(object1[key], object2[key])
+        : eqArrays(object1[key], object2[key]);
+    }
     
     if (object1[key] !== object2[key]) return false;
 
@@ -25,7 +27,7 @@ module.exports = eqObjects;
 
 // const cd = { c: "1", d: ["2", 3] };
 // const dc = { d: ["2", 3], c: "1" };
-// assertEqual(eqObjects(cd, dc), true); 
+// assertEqual(eqObjects(cd, dc), true);
 
 // const cd2 = { c: "1", d: ["2", 3, 4] };
 // assertEqual(eqObjects(cd, cd2), false);

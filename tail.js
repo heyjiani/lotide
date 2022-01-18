@@ -1,5 +1,5 @@
 //FUNCTION FOR RETURNING TAIL ELEMENTS IN AN ARRAY
-const tail = function (array) {
+const tail = (array) => {
   return array.slice(1, array.length);
 };
 
